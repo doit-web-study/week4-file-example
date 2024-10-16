@@ -25,7 +25,7 @@ public class ImageController {
     private final ImageRepository imageRepository;
     private final static Path uploadPath = Path.of("/Users/sangjun/study/SpringReact/file/storage/");
 
-    @PostMapping("/upload")
+    @PostMapping("/image")
     public void upload(@RequestParam MultipartFile file) throws IOException {
         File destinationDirectory = uploadPath.toFile();
         if (!destinationDirectory.exists()) {
